@@ -1,0 +1,848 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(../fonts/NeueMontreal.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(../fonts/NeueMontreal-Bold.otf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  padding: 0px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+body {
+  margin: 0px auto;
+  padding: 0px;
+  background: var(--bg2);
+}
+p {
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: transparent;
+}
+a,
+button {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.header_wrapper {
+  background-image: url("../img/BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar_wrapper {
+  padding-top: 38px;
+}
+.navbar_brand_logo_img {
+  width: 95px;
+  height: 34px;
+}
+.navbar_brand_name {
+  color: var(--color1);
+  font-size: 24px;
+  font-weight: 500;
+}
+._toggler {
+  box-shadow: none !important;
+  border: none !important;
+}
+._toggler.collapsed .navbar-toggler-icon {
+  background-image: url("../img/icons8-menu-100.png") !important;
+  transition: 0.1s all ease-in-out;
+  width: 20px;
+  height: 20px;
+}
+._toggler .navbar-toggler-icon {
+  background-image: url("../img/icons8-multiply-100.png") !important;
+  transition: 0.1s all ease-in-out;
+  width: 28px;
+  height: 28px;
+}
+.nav_link_wrapper {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  gap: 42px;
+}
+.dropdown-toggle::after {
+  border: none !important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107" !important;
+  vertical-align: 0;
+}
+.single_navItem_link {
+  color: var(--color1);
+  font-size: 16px;
+}
+.single_navItem_link:focus {
+  color: var(--color2);
+}
+.single_navItem_link:hover {
+  color: var(--color2);
+  transition: 0.3s;
+}
+.single_dropdown_item:hover {
+  color: var(--color2);
+  background-color: transparent;
+  transition: 0.3s;
+}
+.nav_btn_wrapper {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  align-items: center;
+  gap: 42px;
+}
+.language_flag {
+  width: 14px;
+  height: 14px;
+}
+.language_btn {
+  color: var(--color1);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.language_btn:focus {
+  color: var(--color2);
+}
+.language_btn:hover {
+  color: var(--color2);
+  transition: 0.3s;
+}
+.navbar_btn {
+  color: var(--color1);
+  background-color: var(--bg2);
+  font-size: 16px;
+  width: 128px;
+  height: 46px;
+  border: none;
+  border-radius: 23px;
+}
+.navbar_btn:hover {
+  background-color: #494949;
+  transition: 0.3s all ease-in-out;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+  .nav_link_wrapper {
+    gap: 10px;
+  }
+  .nav_btn_wrapper {
+    gap: 10px;
+  }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .dropdown-menu {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav_link_wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .navbar_wrapper {
+    padding-top: 20px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+  .navbar_wrapper {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+}
+@media only screen and (max-width: 375px) {
+}
+/* navbar end */
+
+/* header start */
+.header_img_wrapper {
+  position: relative;
+}
+.header_person_img1 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 120px;
+  left: 155px;
+}
+.header_person_img2 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 120px;
+  right: 155px;
+}
+.header_title_wrapper {
+  width: 80%;
+  margin-top: 86px;
+  position: relative;
+  z-index: 1;
+}
+.header_title_wrap {
+  font-family: "Neue Montreal";
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  text-transform: uppercase;
+}
+.header_title_grow {
+  display: block;
+  color: var(--color2);
+}
+.header_title_faster {
+  display: block;
+  color: var(--color1);
+}
+.header_title_withACoach {
+  display: block;
+  color: var(--color1);
+}
+.header_title_coach {
+  color: var(--color3);
+}
+.header_text {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  width: 50%;
+  color: var(--color1);
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0 40px 0;
+}
+.header_btn_wrapper {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header_find_coach_btn {
+  width: 187px;
+  height: 58px;
+  color: var(--bg1);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 29px;
+}
+.header_find_coach_btn:hover {
+  background-color: #88d190;
+  transition: 0.3s ease-in-out;
+}
+.header_learn_more_btn {
+  width: 187px;
+  height: 58px;
+  color: var(--bg1);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--color1);
+  border: none;
+  border-radius: 29px;
+  margin-left: 22px;
+}
+.header_learn_more_btn:hover {
+  background-color: #d0cfcf;
+  transition: 0.3s ease-in-out;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (max-width: 1600px) {
+  .header_person_img1 {
+    top: 75px;
+    left: 270px;
+  }
+  .header_person_img2 {
+    top: 75px;
+    right: 240px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+}
+@media (max-width: 1399px) {
+  .header_person_img1 {
+    top: 75px;
+    left: 180px;
+  }
+  .header_person_img2 {
+    top: 75px;
+    right: 150px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .header_title_wrap {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  .header_person_img1 {
+    width: 150px;
+    height: 150px;
+    top: 60px;
+    left: 145px;
+  }
+  .header_person_img2 {
+    width: 150px;
+    height: 150px;
+    top: 60px;
+    right: 120px;
+  }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .header_title_wrap {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .header_text {
+    width: 65%;
+    font-size: 18px;
+  }
+  .header_person_img1 {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    left: 110px;
+  }
+  .header_person_img2 {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    right: 90px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .header_title_wrapper {
+    width: 90%;
+    margin-top: 56px;
+  }
+  .header_title_wrap {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .header_text {
+    width: 75%;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0 30px 0;
+  }
+  .header_person_img1 {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 60px;
+  }
+  .header_person_img2 {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    right: 40px;
+  }
+  .header_find_coach_btn {
+    width: 147px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .header_learn_more_btn {
+    width: 147px;
+    height: 48px;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+  .header_title_wrapper {
+    width: 100%;
+    margin-top: 36px;
+    line-height: 90px;
+  }
+  .header_title_wrap {
+    font-size: 46px;
+    line-height: 55px;
+  }
+  .header_text {
+    width: 65%;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 0 20px 0;
+  }
+  .header_img_wrapper {
+    width: 410px;
+    margin: 0 auto;
+  }
+  .header_person_img1 {
+    width: 75px;
+    height: 75px;
+    top: 32px;
+    left: 50px;
+  }
+  .header_person_img2 {
+    width: 75px;
+    height: 75px;
+    top: 32px;
+    right: 40px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header_title_wrap {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .header_text {
+    width: 70%;
+    font-size: 11px;
+  }
+  .header_img_wrapper {
+    width: 365px;
+    margin: 0 auto;
+  }
+  .header_person_img1 {
+    width: 60px;
+    height: 60px;
+    top: 35px;
+    left: 53px;
+  }
+  .header_person_img2 {
+    width: 60px;
+    height: 60px;
+    top: 35px;
+    right: 45px;
+  }
+  .header_find_coach_btn {
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .header_learn_more_btn {
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+    margin-left: 12px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header_title_wrap {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .header_text {
+    font-size: 10px;
+  }
+  .header_img_wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header_person_img1 {
+    width: 55px;
+    height: 55px;
+    top: 23px;
+    left: 55px;
+  }
+  .header_person_img2 {
+    width: 55px;
+    height: 55px;
+    top: 23px;
+    right: 45px;
+  }
+}
+/* header end */
+
+.review_wrapper {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 100px;
+}
+.review_start_icon {
+  width: 23px;
+  height: 21px;
+}
+.review_text {
+  font-size: 20px;
+  color: var(--color1);
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .review_wrapper {
+    gap: 8px;
+    margin-bottom: 90px;
+  }
+  .review_start_icon {
+    width: 20px;
+    height: 19px;
+  }
+  .review_text {
+    font-size: 18px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .review_start_icon {
+    width: 18px;
+    height: 17px;
+  }
+  .review_text {
+    font-size: 16px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+  .review_text {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .review_wrapper {
+    gap: 5px;
+    margin-bottom: 70px;
+  }
+  .review_start_icon {
+    width: 16px;
+    height: 15px;
+  }
+
+  .review_text {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 375px) {
+}
+/* review end */
+
+/* slider start */
+.slider_wrapper {
+  background-color: var(--bg2);
+  border: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fff, #272727) 30;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+.slider_item_wrapper {
+  font-family: "Neue Montreal";
+  font-weight: 700;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  animation: headerAnim1 30s linear infinite;
+}
+@keyframes headerAnim1 {
+  0% {
+    transform: translate(130%, 0);
+  }
+
+  100% {
+    transform: translate(-200%, 0);
+  }
+}
+
+.slider_item_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.slider_star_icon {
+  width: 24px;
+  height: 24px;
+}
+.slider_item_text {
+  color: var(--color1);
+  font-size: 32px;
+  font-weight: 700;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (max-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+  .slider_item_wrapper {
+    padding: 70px 0;
+    gap: 25px;
+  }
+  .slider_star_icon {
+    width: 22px;
+    height: 22px;
+  }
+  .slider_item_text {
+    font-size: 26px;
+  }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .slider_item_wrapper {
+    padding: 60px 0;
+    gap: 20px;
+  }
+  .slider_star_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .slider_item_text {
+    font-size: 20px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .slider_item_wrapper {
+    padding: 40px 0;
+    gap: 18px;
+  }
+  .slider_item_wrap {
+    gap: 7px;
+  }
+
+  .slider_star_icon {
+    width: 16px;
+    height: 16px;
+  }
+  .slider_item_text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+  .slider_item_wrapper {
+    padding: 30px 0;
+    gap: 12px;
+  }
+  .slider_item_wrap {
+    gap: 5px;
+  }
+  .slider_star_icon {
+    width: 13px;
+    height: 13px;
+  }
+  .slider_item_text {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .slider_item_wrapper {
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .slider_item_wrap {
+    gap: 4px;
+  }
+  .slider_star_icon {
+    width: 12px;
+    height: 12px;
+  }
+  .slider_item_text {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .slider_item_wrapper {
+    padding: 15px 0;
+    gap: 5px;
+  }
+  .slider_item_wrap {
+    gap: 4px;
+  }
+  .slider_star_icon {
+    width: 11px;
+    height: 11px;
+  }
+  .slider_item_text {
+    font-size: 8px;
+  }
+}
+/* slider end */
+.scroll_down_wrapper {
+  padding-bottom: 28px;
+}
+.scroll_down_wrap {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.scroll_down_icon {
+  width: 24px;
+  height: 36px;
+}
+.scroll_down_text {
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  color: var(--color1);
+  font-size: 18px;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {
+}
+@media (max-width: 1399px) {
+}
+@media only screen and (max-width: 1199px) {
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+  .scroll_down_wrap {
+    gap: 10px;
+  }
+  .scroll_down_icon {
+    width: 22px;
+    height: 34px;
+  }
+  .scroll_down_text {
+    font-size: 16px;
+  }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+  .scroll_down_wrapper {
+    padding-bottom: 20px;
+  }
+  .scroll_down_wrap {
+    gap: 8px;
+  }
+  .scroll_down_icon {
+    width: 20px;
+    height: 32px;
+  }
+  .scroll_down_text {
+    font-size: 14px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+  .scroll_down_wrapper {
+    padding-bottom: 18px;
+  }
+  .scroll_down_wrap {
+    gap: 7px;
+  }
+  .scroll_down_icon {
+    width: 18px;
+    height: 30px;
+  }
+  .scroll_down_text {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .scroll_down_wrapper {
+    padding-bottom: 16px;
+  }
+  .scroll_down_wrap {
+    gap: 6px;
+  }
+  .scroll_down_icon {
+    width: 16px;
+    height: 28px;
+  }
+  .scroll_down_text {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .scroll_down_wrapper {
+    padding-bottom: 15px;
+  }
+  .scroll_down_wrap {
+    gap: 4px;
+  }
+  .scroll_down_icon {
+    width: 14px;
+    height: 24px;
+  }
+  .scroll_down_text {
+    font-size: 9px;
+  }
+}
+
+/*------------------
+    Variable 
+------------------*/
+:root {
+  --color1: #fff;
+  --color2: #f0b38c;
+  --color3: #afd7b3;
+  --bg1: #000;
+  --bg2: #2b2b2b;
+  --bg3: #1d2025;
+}
